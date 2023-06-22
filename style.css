@@ -249,12 +249,11 @@ h2{
     
     color: var(--text-color);
     font-family: 'Montserrat', sans-serif;
-    background-image: url('abstract.jpg');
+    background-image: url('aaabstract.webp');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    background: rgb(139,28,176);
-    background: linear-gradient(0deg, rgba(139,28,176,1) 9%, rgba(114,92,176,1) 34%,rgba(29,210,173,1) 75%);
+   
     justify-content: center;
     align-items: center;
     display: flex;
@@ -275,55 +274,106 @@ h2{
 
 .whiteside {
   background: gray;
-  width: 500px;
-  height: 500x;
-  display:flex;
-  
-  
-  
+  width: 20vw;
+  height: 50vh;
+  border-radius: 50px 0 0 50px;
+  justify-content: right;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   justify-content: right;
   
   
   
+  
+  
 }
+.left{ grid-area: 1 / 2 / 6 / 3; }
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 2 / 1 / 3 / 2; }
+.div3 { grid-area: 3 / 1 / 4 / 2; }
+.div4 { grid-area: 4 / 1 / 5 / 2; }
+.div5 { grid-area: 5 / 1 / 6 / 2; }
+
+
+
+
+
+.left{
+  width: 100%;
+  height: 100%;
+  
+  
+}
+
+.whiteside h1 {
+
+  position: absolute;
+  padding-top: 20px;
+  padding-left: 20px;
+  
+  
+  
+}
+
+
+
+.whiteside h2 {
+  display: none;
+  position: absolute;
+  top: 50%; 
+
+  padding-bottom: 20px;
+  
+  
+  
+}
+
+.whiteside:hover {
+  transform: translateX(10em) scale(1.7);
+  
+}
+
+.whiteside:hover h2 {
+  display: block;
+  transform: scale(0.5); 
+}
+
+
 
 .blackside {
   background: blue;
-  width: 500px;
-  height: 500px;
+  width:  20vw;
+  height: 50vh;
   display: flex;
-  
-  
+  border-radius: 0 50px 50px 0;
   
   justify-content: left;
+  animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both,
 
-  
-  
- 
-}
 
-.left{
-  width: 50%;
-  
 }
 
 .right{
   width: 50%;
   height: 100%;
-  background: transparent;
+
   
   
   
 }
+
+
+
+
+.blackside:hover{
+  transform: translateX(-10em) scale(1.4);
   
 
-
-
-
-.whiteside:hover{
-  transform: translate(30px, 50%);
-
 }
+
 
 
 
