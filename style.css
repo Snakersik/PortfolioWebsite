@@ -32,8 +32,8 @@ nav {
     font-family: 'Montserrat', sans-serif;
     background-color: transparent;
     text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 1.563rem;
+    padding-bottom: 1.563rem;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -48,12 +48,12 @@ nav.scrolled {
 
 
 h1{
-    font-size: 36px;
+    font-size: 2.25rem;
     padding-bottom: 1rem;
 }
 
 h2{
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 
@@ -233,6 +233,23 @@ h2{
     100% {
       transform: translateZ(0);
       opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr;
+      padding: 5rem 0;
+    }
+  
+    .intro, .ImagePhoto {
+      text-align: center;
+      margin: 2rem;
+    }
+  
+    .ImagePhoto {
+      height: auto;
+      max-width: 100%;
     }
   }
 
