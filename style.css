@@ -1,0 +1,230 @@
+
+:root {
+    --text-color: #f0f0f0;
+    --background-color: #171717;
+    --primary-color: #474847;
+    --secondary-color: #050505;
+    --accent-color: #3a3b3a;
+
+
+}
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    scroll-behavior: smooth;
+    
+    
+}
+
+nav {
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    transition: background-color 0.5s;
+}
+
+nav.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+h1{
+    font-size: 36px;
+    padding-bottom: 1rem;
+}
+
+h2{
+    font-size: 30px;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    gap: 2rem;
+    padding: 15rem 0 10rem 10rem;
+    justify-content: center;
+
+}
+
+
+
+.section1 {
+    
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('MATRiX.html');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* background: rgb(139,28,176);
+    background: linear-gradient(180deg, rgba(139,28,176,1) 9%, rgba(114,92,176,1) 34%, rgba(29,210,173,1) 75%); */
+    
+    
+
+}
+
+.section2 {
+    
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('abstract.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background: rgb(139,28,176);
+    background: linear-gradient(0deg, rgba(139,28,176,1) 9%, rgba(114,92,176,1) 34%, rgba(29,210,173,1) 75%);
+    
+    
+
+}
+
+
+
+
+
+
+
+
+
+.chleb {
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.chleb::before {
+    content: "developer";
+    animation: test 3s ease-in  infinite normal;
+    color: #00FF66;
+    
+    
+    
+}
+
+.chleb::after {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    animation: blinking 0.5s infinite normal;
+}
+
+@keyframes test {
+    0% { content: ""; }
+    10% { content: " "; }
+    20% { content: "d"; }
+    30% { content: "de"; }
+    40% { content: "dev"; }
+    50% { content: "deve"; }
+    60% { content: "devel"; }
+    70% { content: "develo"; }
+    80% { content: "develop"; }
+    90% { content: "develope"; }
+    100% { content: "developer"; }
+    
+}
+
+@keyframes blinking {
+    from { opacity: 0%; }
+    to { opacity: 100%; }
+}
+
+
+
+
+
+
+
+.links li{
+    display: inline;
+    padding: 2rem;
+
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+.intro{
+    position: relative;
+    text-align: left;
+    animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+    
+
+    
+    
+}
+
+.ImagePhoto{
+    height: 45vh;
+    border-radius: 40%;
+    animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both, slide 1.5s 2s infinite alternate ease-in-out
+    
+    
+}
+
+
+@keyframes slide {
+    0% {transform: translateY(0) translateX(0);}
+      100% {transform: translateY(-20px) translateX(20px);}
+    }
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+    0% {
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+
+
+
+
+
+
+

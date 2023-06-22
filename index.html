@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="links">
+            <li class="btn">
+                Projects
+            </li>
+            <li class="btn">
+                Life
+            </li>
+            <li class="btn">
+                Competition
+            </li>
+        </ul>
+    </nav>
+    <hr />
+    <section class="section1">
+        <div class="grid">
+            <div class="intro">
+                <h1>I'm Konrad a <span class="chleb"></span></h1>
+                <h2>lorem i</h2>
+            </div>
+            <img class="ImagePhoto" src="monkey.webp" />
+        </div>
+    </section>
+    <section class="section2">
+    </section>
+
+    <script>
+        
+        window.addEventListener('wheel', function(event) {
+            event.preventDefault(); 
+
+            const delta = event.deltaY; 
+
+            
+            if (delta > 0) {
+                document.querySelector('.section2').scrollIntoView({ behavior: 'smooth' });
+            } else if (delta < 0) {
+                document.querySelector('.section1').scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+
+        
+        window.addEventListener('wheel', function(event) {
+            event.preventDefault();
+        }, { passive: false });
+
+        window.addEventListener('scroll', function() {
+    var nav = document.querySelector('nav');
+    var scrolled = window.scrollY > 0;
+    
+    if (scrolled) {
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+});
+    </script>
+</body>
+</html>
