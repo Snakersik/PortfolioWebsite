@@ -34,6 +34,8 @@
     
 }
 
+
+
 h1{
   font-size: 4vw;
   padding-bottom: 1rem;
@@ -41,6 +43,16 @@ h1{
 
 h2{
   font-size: 1.875rem;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  padding: 3vw 0vw 0 0vw;
+  
+  
+
+  
 }
 
 nav {
@@ -99,7 +111,6 @@ nav.scrolled {
 .intro{
   position: relative;
   text-align: center;
-  
   top:30%;
 
 }
@@ -168,6 +179,9 @@ nav.scrolled {
 
 
 
+
+
+
 @keyframes animate {
   0%{
     transform: translateY(100vh) scale(0);
@@ -213,10 +227,17 @@ nav.scrolled {
 
 
 
+
+
 @keyframes slide {
     0% {transform: translateY(0) translateX(0);}
-      100% {transform: translateY(-20px) translateX(20px);}
+    100% {transform: translateY(20px) translateX(-20px);}
+
+    
     }
+
+
+
 
 @keyframes slide-in-right {
   0% {
@@ -240,49 +261,15 @@ nav.scrolled {
     }
   }
 
-  @keyframes tracking-in-contract-bck {
-    0% {
-      letter-spacing: 1em;
-      transform: translateZ(400px);
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      transform: translateZ(0);
-      opacity: 1;
-    }
-  }
 
-  /* @media screen and (max-width: 1268px) {
-    .grid {
-      grid-template-columns: 1fr;
-      padding: 5rem 0;
-      
 
-    }
-  
-    .intro, .ImagePhoto {
-      text-align: center;
-      margin: 2rem;
-    }
-  
-    .ImagePhoto {
-      
-      
 
-      
-      
-      
-    }
-  } */
 
 .section2 {
     
     color: var(--text-color);
     font-family: 'Montserrat', sans-serif;
-    background-color: black;
+    background-color: #042747;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
