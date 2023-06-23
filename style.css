@@ -1,6 +1,7 @@
 
 :root {
     --text-color: #f0f0f0;
+    --text-color-navar: #03FFFF;
     --background-color: #171717;
     --primary-color: #474847;
     --secondary-color: #050505;
@@ -8,6 +9,9 @@
 
 
 }
+
+
+
 
 
 
@@ -23,13 +27,25 @@
     vertical-align: baseline;
     background: transparent;
     scroll-behavior: smooth;
+    box-sizing: border-box;
+    
+
     
     
 }
 
+h1{
+  font-size: 4vw;
+  padding-bottom: 1rem;
+}
+
+h2{
+  font-size: 1.875rem;
+}
+
 nav {
-    color: var(--text-color);
-    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color-navar);
+    font-family: 'Belanosima', sans-serif;
     background-color: transparent;
     text-align: center;
     padding-top: 1.563rem;
@@ -43,65 +59,71 @@ nav.scrolled {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-
-
-
-h1{
-    font-size: 2.25rem;
-    padding-bottom: 1rem;
-}
-
-h2{
-    font-size: 1.875rem;
+.links li{
+  display: inline;
+  padding: 2rem;
+  font-size: 2vw;
 }
 
 
-.grid{
-    display: grid;
-    grid-template-columns: 500px 500px;
-    gap: 2rem;
-    padding: 15rem 0 10rem 10rem;
-    justify-content: center;
-    
 
-}
+
+
+
+
+
 
 
 
 .section1 {
     
     color: var(--text-color);
-    font-family: 'Montserrat', sans-serif;
-    background-image: url('aaabstract.webp');
+    font-family: 'Belanosima', sans-serif;
+    background-image: url('homepage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     height: 100vh;
+    z-index: -100;
+    
+
+    
+
     
     
     
 
 }
 
+.intro{
+  position: relative;
+  text-align: center;
+  
+  top:30%;
 
+}
 
+.introText{
+  animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
-
-
-
-
-
+}
 
 
 .chleb {
     overflow: hidden;
-    position: relative;
+    position: flex;
+    animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
+    
+    
     
 }
 
 .chleb::before {
-    content: "developer";
-    animation: test 3s  ease-in  infinite normal;
-    color: #00FF66;
+    content: "programmer";
+    animation: test 3s 2.5s ease-in  infinite normal;
+    color: var(--text-color-navar);
     
     
     
@@ -110,24 +132,65 @@ h2{
 .chleb::after {
     content: "";
     width: 2px;
-    height: 100%;
+    height: 47;
     background-color: white;
     position: absolute;
     animation: blinking 0.5s infinite normal;
 }
 
+.container
+{
+  position:relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  
+}
+.bubbles{
+  position: relative;
+  display: flex;
+  
+  
+}
+
+.bubbles span{
+  position: relative;
+  width: 100px;
+  height: 30px;
+  background:#03FFFF ;
+  margin: 0 4 px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #03FFFF, 0 0 100px #03FFFF;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+  
+}
+
+
+
+@keyframes animate {
+  0%{
+    transform: translateY(100vh) scale(0);
+  }
+  100%{
+    transform: translateY(-10vh) scale(0.3);
+  }
+  
+}
+
+
+
 @keyframes test {
-    0% { content: ""; }
-    10% { content: " "; }
-    20% { content: "d"; }
-    30% { content: "de"; }
-    40% { content: "dev"; }
-    50% { content: "deve"; }
-    60% { content: "devel"; }
-    70% { content: "develo"; }
-    80% { content: "develop"; }
-    90% { content: "develope"; }
-    100% { content: "developer"; }
+    0% { content: "p"; }
+    10% { content: "pr"; }
+    20% { content: "pro"; }
+    30% { content: "prog"; }
+    40% { content: "progr"; }
+    50% { content: "program"; }
+    60% { content: "programm"; }
+    70% { content: "programme"; }
+    80% { content: "programmer"; }
+
     
 }
 
@@ -142,42 +205,12 @@ h2{
 
 
 
-.links li{
-    display: inline;
-    padding: 2rem;
-
-
-
-
-    
-}
 
 
 
 
 
 
-
-
-.intro{
-    position: relative;
-    text-align: left;
-    animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    
-
-    
-
-    
-    
-}
-
-.ImagePhoto{
-    height: 45vh;
-    border-radius: 40%;
-    animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both, slide 1.5s 2s infinite alternate ease-in-out
-    
-    
-}
 
 
 @keyframes slide {
@@ -249,7 +282,7 @@ h2{
     
     color: var(--text-color);
     font-family: 'Montserrat', sans-serif;
-    background-image: url('aaabstract.webp');
+    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -261,118 +294,8 @@ h2{
 
 }
 
-.grid2{
-  display: flex;
-  
-  gap: 0;
-  justify-content: center;
-  
- 
-}
 
 
-
-.whiteside {
-  background: gray;
-  width: 20vw;
-  height: 50vh;
-  border-radius: 50px 0 0 50px;
-  justify-content: right;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  justify-content: right;
-  
-  
-  
-  
-  
-}
-.left{ grid-area: 1 / 2 / 6 / 3; }
-.div1 { grid-area: 1 / 1 / 2 / 2; }
-.div2 { grid-area: 2 / 1 / 3 / 2; }
-.div3 { grid-area: 3 / 1 / 4 / 2; }
-.div4 { grid-area: 4 / 1 / 5 / 2; }
-.div5 { grid-area: 5 / 1 / 6 / 2; }
-
-
-
-
-
-.left{
-  width: 100%;
-  height: 100%;
-  
-  
-}
-
-.whiteside h1 {
-
-  position: absolute;
-  padding-top: 20px;
-  padding-left: 20px;
-  
-  
-  
-}
-
-
-
-.whiteside h2 {
-  display: none;
-  position: absolute;
-  top: 50%; 
-
-  padding-bottom: 20px;
-  
-  
-  
-}
-
-.whiteside:hover {
-  transform: translateX(10em) scale(1.7);
-  
-}
-
-.whiteside:hover h2 {
-  display: block;
-  transform: scale(0.5); 
-}
-
-
-
-.blackside {
-  background: blue;
-  width:  20vw;
-  height: 50vh;
-  display: flex;
-  border-radius: 0 50px 50px 0;
-  
-  justify-content: left;
-  animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both,
-
-
-}
-
-.right{
-  width: 50%;
-  height: 100%;
-
-  
-  
-  
-}
-
-
-
-
-.blackside:hover{
-  transform: translateX(-10em) scale(1.4);
-  
-
-}
 
 
 
