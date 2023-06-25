@@ -113,19 +113,20 @@ nav.scrolled {
   position: relative;
   text-align: center;
   top:30%;
+  overflow: hidden;
 
 }
 
 .introText{
-  overflow: hidden;
-  osition: relative;
+  
+  position: relative;
   animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
 }
 
 
 .chleb {
-    overflow: hidden;
+    
     position: relative;
     animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     
