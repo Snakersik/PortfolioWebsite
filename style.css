@@ -117,6 +117,8 @@ nav.scrolled {
 }
 
 .introText{
+  overflow: hidden;
+  osition: relative;
   animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
 }
@@ -124,7 +126,7 @@ nav.scrolled {
 
 .chleb {
     overflow: hidden;
-    position: flex;
+    position: relative;
     animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     
     
@@ -144,7 +146,7 @@ nav.scrolled {
 .chleb::after {
     content: "";
     width: 2px;
-    height: 47;
+
     background-color: white;
     position: absolute;
     animation: blinking 0.5s infinite normal;
@@ -304,20 +306,52 @@ nav.scrolled {
 
 
 
-.section2 {
-    
+.section2  {
+
     color: var(--text-color);
     font-family: 'Montserrat', sans-serif;
     background-color: #042747;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-   
     justify-content: center;
     align-items: center;
     display: flex;
+    padding: 40px;
+
+}
 
 
+.SkillContainer {
+  display: flex;
+  border-color: #03FFFF;
+  border-style: solid;
+  border-width: 5px;
+  background-color: #042747;
+  width: 25vw;
+  height: 60vh;
+  padding: 40px;
+  justify-content: flex-start; 
+  align-items: flex-start; 
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column; 
+}
+
+.skillsTheme {
+  color: #03FFFF;
+  font-size: 2vw;
+ 
+  
+}
+
+.skillsDescribtion {
+  font-size: 20px;
+  padding: 10px;
+  text-align: right;
 }
 
 
