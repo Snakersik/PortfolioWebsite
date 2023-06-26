@@ -267,23 +267,22 @@ nav.scrolled {
 
 .section2 {
   color: var(--text-color);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Belanosima", sans-serif;
   background-color: #01080E;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  padding: 5% 10%;
+  
+  
   display: flex;
   gap: 7.5rem;
   justify-content: center;
   align-items: center;
-  
-  
-  
-  
+
 }
 
 .SkillContainer {
+
   
   border-color: #03ffff;
   border-style: solid;
@@ -294,6 +293,7 @@ nav.scrolled {
   border-radius: 40px;
   text-align: center;
   overflow: hidden;
+  
   
   
   
@@ -529,7 +529,7 @@ nav.scrolled {
     
     flex-direction: column;
     height: 100%;
-    padding: 50px;
+    padding: 150px;
     gap: 5rem;
 
   }
@@ -551,6 +551,32 @@ nav.scrolled {
   .SkillContainer {
     font-size: 1.5vw;
     min-height: auto;
-    min-width: 80vw;
+    min-width: 50vw;
+  }
+  .skillsTheme{
+    font-size: 20px;
+  }
+  
+  .skillsDescribtion{
+    font-size: 16px;
   }
 }
+
+
+.section3 {
+  color: var(--text-color);
+  font-family: "Belanosima", sans-serif;
+  background-color: #01080E;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  
+  display: flex;
+  gap: 7.5rem;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
