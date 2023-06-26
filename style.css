@@ -35,7 +35,9 @@ a {
   animation: bounce-in-top 2s both;
 }
 
-nav {
+
+
+nav{
   color: var(--text-color-navar);
   font-family: "Belanosima", sans-serif;
   background-color: transparent;
@@ -43,22 +45,28 @@ nav {
   padding-top: 1.563rem;
   padding-bottom: 1.563rem;
   width: 100%;
+  
   position: fixed;
-  transition: background-color 0.5s;
   
-  
-  
+
+  transition: background-color 0.5s; 
 }
+
 
 nav.scrolled {
   
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+
+
+
 .links li {
   display: inline;
   padding: 2rem;
   font-size: 2vw;
+  
+  
 }
 
 .section1 {
@@ -70,7 +78,7 @@ nav.scrolled {
   background-attachment: fixed;
   background-position: center;
   height: 100vh;
-  z-index: -100;
+  
 }
 
 .intro {
@@ -78,6 +86,7 @@ nav.scrolled {
   text-align: center;
   top: 30%;
   overflow: hidden;
+  
 }
 
 .introText {
@@ -99,21 +108,29 @@ nav.scrolled {
 .chleb::after {
   content: "";
   width: 2px;
-
   background-color: white;
   position: absolute;
   animation: blinking 0.5s infinite normal;
 }
 
 .container {
-  position: relative;
+  position: fixed;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  pointer-events: none;
+ 
+  
+  
+  
 }
+
+
 .bubbles {
   position: relative;
   display: flex;
+  
+  
 }
 
 .bubbles span {
@@ -126,7 +143,9 @@ nav.scrolled {
   box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #03ffff, 0 0 100px #03ffff;
   animation: animate 15s linear infinite;
   animation-duration: calc(125s / var(--i));
-  z-index: 999;
+  pointer-events: none;
+ 
+  
 }
 
 @keyframes animate {
@@ -248,7 +267,7 @@ nav.scrolled {
 .section2 {
   color: var(--text-color);
   font-family: "Montserrat", sans-serif;
-  background-color: #042747;
+  background-color: #01080E;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -257,20 +276,26 @@ nav.scrolled {
   gap: 7.5rem;
   justify-content: center;
   align-items: center;
+  
+  
+  
+  
 }
 
 .SkillContainer {
+  
   border-color: #03ffff;
   border-style: solid;
   border-width: 5px;
   background-color: #042747;
   flex: 1;
-
   min-height: 50vh;
   border-radius: 40px;
   text-align: center;
   overflow: hidden;
-  z-index: 1;
+  
+  
+  
 }
 
 .skillsTheme {

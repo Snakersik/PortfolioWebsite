@@ -15,7 +15,8 @@
     </head>
     <body>
 
-        <nav>
+        <div class="maincontent">
+            <nav>
             <ul class="links">
                 <li class="btn" onclick="scrollToSection2()">
                     Tech stack
@@ -27,6 +28,9 @@
                     About me
                 </li>
             </ul>
+        </nav>
+        
+        
             <div class="container">
                 <div class="bubbles">
                     <span style="--i:1;"></span>
@@ -67,7 +71,9 @@
 
                 </div>
             </div>
-        </nav>
+        </div>
+           
+        
 
         <section class="section1">
 
@@ -87,6 +93,9 @@
             </section>
 
             <section class="section2">
+        
+
+                
                 <div class="SkillContainer">
                     <div class="Skillcontent">
                         <div class="skillsTheme">Frontend <span
@@ -212,7 +221,7 @@
         
         window.addEventListener('wheel', function(event) {
             event.preventDefault();
-        }, { passive: true });
+        }, { passive: false });
 
         window.addEventListener('scroll', function() {
     var nav = document.querySelector('nav');
