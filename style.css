@@ -1,47 +1,30 @@
-
 :root {
-    --text-color: #f0f0f0;
-    --text-color-navar: #03FFFF;
-    --background-color: #171717;
-    --primary-color: #474847;
-    --secondary-color: #050505;
-    --accent-color: #3a3b3a;
-
-
+  --text-color: #f0f0f0;
+  --text-color-navar: #03ffff;
+  --background-color: #171717;
+  --primary-color: #474847;
+  --secondary-color: #050505;
+  --accent-color: #3a3b3a;
 }
-
-
-
-
-
-
-
-
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-    
-
-    
-    
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
-
-
-h1{
+h1 {
   font-size: 4vw;
   padding-bottom: 1rem;
 }
 
-h2{
+h2 {
   font-size: 1.875rem;
 }
 
@@ -50,199 +33,158 @@ a {
   text-decoration: none;
   padding: 3vw 0vw 0 0vw;
   animation: bounce-in-top 2s both;
-  
-  
-
-  
 }
 
 nav {
-    color: var(--text-color-navar);
-    font-family: 'Belanosima', sans-serif;
-    background-color: transparent;
-    text-align: center;
-    padding-top: 1.563rem;
-    padding-bottom: 1.563rem;
-    width: 100%;
-    position: fixed;
-    transition: background-color 0.5s;
+  color: var(--text-color-navar);
+  font-family: "Belanosima", sans-serif;
+  background-color: transparent;
+  text-align: center;
+  padding-top: 1.563rem;
+  padding-bottom: 1.563rem;
+  width: 100%;
+  position: fixed;
+  transition: background-color 0.5s;
+  
+  
+  
 }
 
 nav.scrolled {
-    background-color: rgba(0, 0, 0, 0.8);
+  
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.links li{
+.links li {
   display: inline;
   padding: 2rem;
   font-size: 2vw;
 }
 
-
-
-
-
-
-
-
-
-
-
 .section1 {
-    
-    color: var(--text-color);
-    font-family: 'Belanosima', sans-serif;
-    background-image: url('homepage.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    height: 100vh;
-    z-index: -100;
-    
-
-    
-
-    
-    
-    
-
+  color: var(--text-color);
+  font-family: "Belanosima", sans-serif;
+  background-image: url("homepage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  z-index: -100;
 }
 
-.intro{
+.intro {
   position: relative;
   text-align: center;
-  top:30%;
+  top: 30%;
   overflow: hidden;
-
 }
 
-.introText{
-  
+.introText {
   position: relative;
-  animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-
+  animation: slide-in-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-
 
 .chleb {
-    
-    position: relative;
-    animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    
-    
-    
-    
+  position: relative;
+  animation: slide-in-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .chleb::before {
-    content: "programmer";
-    animation: test 3s 2.5s ease-in  infinite normal;
-    color: var(--text-color-navar);
-    
-    
-    
+  content: "programmer";
+  animation: test 3s 2.5s ease-in infinite normal;
+  color: var(--text-color-navar);
 }
 
 .chleb::after {
-    content: "";
-    width: 2px;
+  content: "";
+  width: 2px;
 
-    background-color: white;
-    position: absolute;
-    animation: blinking 0.5s infinite normal;
+  background-color: white;
+  position: absolute;
+  animation: blinking 0.5s infinite normal;
 }
 
-.container
-{
-  position:relative;
+.container {
+  position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  
 }
-.bubbles{
+.bubbles {
   position: relative;
   display: flex;
-  
-  
 }
 
-.bubbles span{
+.bubbles span {
   position: relative;
   width: 100px;
   height: 30px;
-  background:#03FFFF ;
+  background: #03ffff;
   margin: 0 4 px;
   border-radius: 50%;
-  box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #03FFFF, 0 0 100px #03FFFF;
+  box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #03ffff, 0 0 100px #03ffff;
   animation: animate 15s linear infinite;
   animation-duration: calc(125s / var(--i));
   z-index: 999;
-  
 }
-
-
-
-
-
 
 @keyframes animate {
-  0%{
+  0% {
     transform: translateY(100vh) scale(0);
   }
-  100%{
+  100% {
     transform: translateY(-10vh) scale(0.3);
   }
-  
 }
 
-
-
 @keyframes test {
-    0% { content: "p"; }
-    10% { content: "pr"; }
-    20% { content: "pro"; }
-    30% { content: "prog"; }
-    40% { content: "progr"; }
-    50% { content: "program"; }
-    60% { content: "programm"; }
-    70% { content: "programme"; }
-    80% { content: "programmer"; }
-
-    
+  0% {
+    content: "p";
+  }
+  10% {
+    content: "pr";
+  }
+  20% {
+    content: "pro";
+  }
+  30% {
+    content: "prog";
+  }
+  40% {
+    content: "progr";
+  }
+  50% {
+    content: "program";
+  }
+  60% {
+    content: "programm";
+  }
+  70% {
+    content: "programme";
+  }
+  80% {
+    content: "programmer";
+  }
 }
 
 @keyframes blinking {
-    from { opacity: 0%; }
-    to { opacity: 100%; }
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @keyframes slide {
-    0% {transform: translateY(0) translateX(0);}
-    100% {transform: translateY(20px) translateX(-20px);}
-
-    
-    }
-
-
-
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(20px) translateX(-20px);
+  }
+}
 
 @keyframes slide-in-right {
   0% {
@@ -256,153 +198,333 @@ nav.scrolled {
 }
 
 @keyframes slide-in-left {
-    0% {
-      transform: translateX(-1000px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
   }
-
-
-  @keyframes bounce-in-top {
-    0% {
-      transform: translateY(-500px);
-      animation-timing-function: ease-in;
-      opacity: 0;
-    }
-    38% {
-      transform: translateY(0);
-      animation-timing-function: ease-out;
-      opacity: 1;
-    }
-    55% {
-      transform: translateY(-65px);
-      animation-timing-function: ease-in;
-    }
-    72% {
-      transform: translateY(0);
-      animation-timing-function: ease-out;
-    }
-    81% {
-      transform: translateY(-28px);
-      animation-timing-function: ease-in;
-    }
-    90% {
-      transform: translateY(0);
-      animation-timing-function: ease-out;
-    }
-    95% {
-      transform: translateY(-8px);
-      animation-timing-function: ease-in;
-    }
-    100% {
-      transform: translateY(0);
-      animation-timing-function: ease-out;
-    }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
-
-
-
-
-
-.section2  {
-
-    color: var(--text-color);
-    font-family: 'Montserrat', sans-serif;
-    background-color: #042747;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    padding: 40px;
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
-
 }
 
+@keyframes bounce-in-top {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+.section2 {
+  color: var(--text-color);
+  font-family: "Montserrat", sans-serif;
+  background-color: #042747;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 5% 10%;
+  display: flex;
+  gap: 7.5rem;
+  justify-content: center;
+  align-items: center;
+}
 
 .SkillContainer {
-  
-  
-  border-color: #03FFFF;
+  border-color: #03ffff;
   border-style: solid;
   border-width: 5px;
   background-color: #042747;
-  flex:2;
-  max-width: 25vw;
-  max-height: 60vh;
-  min-height: 40vh;
-  
-  gap: 120px; 
+  flex: 1;
+
+  min-height: 50vh;
   border-radius: 40px;
   text-align: center;
   overflow: hidden;
   z-index: 1;
-  
-
 }
 
-
-
 .skillsTheme {
-  color: #03FFFF;
+  color: #03ffff;
   font-size: 2.5vw;
   font-weight: bold;
-  background-color: #06122C;
-  padding: 10px;
-  
-  
- 
-  
+  background-color: #06122c;
+  padding: 0.938rem;
 }
 
 .skillsDescribtion {
   font-size: 1.5vw;
-  padding: 10px;
- 
+  padding: 0.938rem;
 }
 
-.SkillContainer:hover{
-  transform: scale(1.1);
-  
+.bar {
+  background: #353b48;
+  display: block;
+  height: 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0, 3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0, 24);
+  transform: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin-top: 10px;
 }
 
-
-
-
-.skillsDescribtion span{
-  margin-left: 10px;
-  
+.bar span {
+  height: 100%;
+  float: left;
+  background: linear-gradient(
+    135deg,
+    rgba(236, 0, 140, 1) 0%,
+    rgba(252, 103, 103, 1) 100%
+  );
 }
 
-@media only screen and (max-width: 768px){
+.skillbar {
+  display: none;
+}
+
+.SkillContainer:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.SkillContainer:hover .skillbar {
+  display: block;
+}
+
+.JS {
+  width: 40%;
+  animation: js 3s;
+}
+
+.css {
+  width: 90%;
+  animation: css 3s;
+}
+.html {
+  width: 90%;
+  animation: html 3s;
+}
+.react {
+  width: 30%;
+  animation: react 3s;
+}
+.bootstrap {
+  width: 60%;
+  animation: bootstrap 3s;
+}
+
+.python {
+  width: 70%;
+  animation: python 3s;
+}
+.nodejs {
+  width: 50%;
+  animation: nodejs 3s;
+}
+.mongodb {
+  width: 50%;
+  animation: mongodb 3s;
+}
+.postgressql {
+  width: 60%;
+  animation: postgressql 3s;
+}
+.restapi {
+  width: 80%;
+  animation: restapi 3s;
+}
+.figma {
+  width: 60%;
+  animation: figma 3s;
+}
+.photoshop {
+  width: 30%;
+  animation: photoshop 3s;
+}
+.git {
+  width: 70%;
+  animation: git 3s;
+}
+.postman {
+  width: 60%;
+  animation: postman 3s;
+}
+
+@keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes bootstrap {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes python {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes nodejs {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes mongodb {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes postgressql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes restapi {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes figma {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes photoshop {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+@keyframes git {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes postman {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
   .section2{
+    
     flex-direction: column;
-  }
-
-  .SkillContainer{
-    max-height: 20vh;
-    min-height: 20vh;
-    min-width: 30vh;
-  }
+    height: 100%;
+    padding: 50px;
+    gap: 5rem;
 
   }
 
 
+  h1 {
+    font-size: 6vw;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .links li {
+    font-size: 3vw;
+  }
   
 
-
-
-
-
-
-
-
-
-
-
-
+  .SkillContainer {
+    font-size: 1.5vw;
+    min-height: auto;
+    min-width: 80vw;
+  }
+}
