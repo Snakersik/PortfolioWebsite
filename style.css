@@ -41,16 +41,19 @@ nav{
   color: var(--text-color-navar);
   font-family: "Belanosima", sans-serif;
   background-color: transparent;
-  text-align: center;
+  position: fixed;
   padding-top: 1.563rem;
   padding-bottom: 1.563rem;
   width: 100%;
-  
-  position: fixed;
   z-index: 100;
-  
-
   transition: background-color 0.5s; 
+  text-align: center;
+}
+
+nav > ul > .btn-home {
+  float: left;
+  padding: 0;
+  padding-left: 30px;
 }
 
 
@@ -66,8 +69,11 @@ nav.scrolled {
   display: inline;
   padding: 2rem;
   font-size: 2vw;
-  
-  
+
+}
+
+.links li:hover{
+  color: black;
 }
 
 .section1 {
@@ -272,8 +278,7 @@ nav.scrolled {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  
-  
+  padding: 3rem;
   display: flex;
   gap: 7.5rem;
   justify-content: center;
@@ -524,7 +529,80 @@ nav.scrolled {
   }
 }
 
-@media screen and (max-width: 1150px) {
+
+
+
+
+.section3 {
+  color: var(--text-color);
+  font-family: "Belanosima", sans-serif;
+  background-color: #01080E;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  
+  
+  gap: 7.5rem;
+  justify-content: center;
+  align-items: center;
+
+}
+.hero{
+  text-align: left;
+  margin-bottom: 50px;
+  background-color: wheat;
+  padding: 20px;
+}
+
+.ProjectImg{
+  width: 600px;
+  height: 600px;
+}
+
+
+
+.projects-box{
+  display: grid;
+  gap: 50px;
+  grid-template-columns:auto auto  auto;
+  align-content: center;
+  justify-items: center;
+  padding: 40px;
+
+  
+
+  
+ 
+
+}
+
+
+.project{
+  background-image: url("e-commerce-first.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid;
+  overflow: hidden;
+  border-radius: 20px;
+  min-width: 400px;
+  min-height: 400px;
+  max-width: 400px;
+  max-height: 400px;
+
+
+}
+
+.project:hover{
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1250px) {
   .section2{
     
     flex-direction: column;
@@ -554,29 +632,37 @@ nav.scrolled {
     min-width: 50vw;
   }
   .skillsTheme{
-    font-size: 20px;
+    font-size: 28px;
   }
   
   .skillsDescribtion{
-    font-size: 16px;
+    font-size: 22px;
   }
+
+}
+
+
+
+
+@media screen and (max-width: 1368px) {
+  .projects-box{
+    grid-template-columns: 1fr 1fr  ;
+
+  }
+
 }
 
 
-.section3 {
-  color: var(--text-color);
-  font-family: "Belanosima", sans-serif;
-  background-color: #01080E;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  
-  display: flex;
-  gap: 7.5rem;
-  justify-content: center;
-  align-items: center;
+@media screen and (max-width: 910px) {
+  .projects-box{
+    grid-template-columns: auto ;
+
+  }
 
 }
+
+
+
 
 
 

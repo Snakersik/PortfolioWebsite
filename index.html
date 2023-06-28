@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang=en>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Portfolio Website Konrad Tratwal My projects">
+
         <title>Portfolio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,25 +15,28 @@
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/e172e4aae4.js"
             crossorigin="anonymous"></script>
+
     </head>
     <body>
 
         <div class="maincontent">
             <nav>
-            <ul class="links">
-                <li class="btn" onclick="scrollToSection2()">
-                    Tech stack
-                </li>
-                <li class="btn">
-                    Projects
-                </li>
-                <li class="btn">
-                    About me
-                </li>
-            </ul>
-        </nav>
-        
-        
+                <ul class="links">
+                    <li class="btn-home" onclick="scrollToSection1()">
+                        Home
+                    </li>
+                    <li class="btn" onclick="scrollToSection2()">
+                        Tech stack
+                    </li>
+                    <li class="btn" onclick="scrollToSection3()">
+                        Projects
+                    </li>
+                    <li class="btn">
+                        About me
+                    </li>
+                </ul>
+            </nav>
+
             <div class="container">
                 <div class="bubbles">
                     <span style="--i:1;"></span>
@@ -72,8 +78,6 @@
                 </div>
             </div>
         </div>
-           
-        
 
         <section class="section1">
 
@@ -93,9 +97,7 @@
             </section>
 
             <section class="section2">
-        
 
-                
                 <div class="SkillContainer">
                     <div class="Skillcontent">
                         <div class="skillsTheme">Frontend <span
@@ -197,45 +199,75 @@
             </section>
 
             <section class="section3">
-                
+                <h1 class="hero">/ Projects</h1>
+                <div class="projects-box">
+                    <div class="project first">
+                    </div>
+
+                    <div class="project ">
+                    </div>
+                    <div class="project">
+
+                    </div>
+                    <div class="project">
+                    </div>
+
+                    <div class="project">
+                        
+                    </div>
+                    <div class="project">
+                        
+                        
+                    </div>
+
+                </div>
 
             </section>
 
-            <script config --global -l>
-            function scrollToSection2() {
-                document.querySelector('.section2').scrollIntoView({ behavior: 'smooth' });
-    }        
-        
-        window.addEventListener('wheel', function(event) {
-            event.preventDefault(); 
+        <script config --global -l>
+        function scrollToSection1() {
+            document.querySelector('.section1').scrollIntoView({ behavior: 'smooth' })
+        }
+        function scrollToSection2() {
+            document.querySelector('.section2').scrollIntoView({ behavior: 'smooth' })
+        }
+        function scrollToSection3() {
+            document.querySelector('.section3').scrollIntoView({ behavior: 'smooth' })
+        }
 
-            const delta = event.deltaY; 
+        window.addEventListener('view')
 
-            
+        window.addEventListener('wheel', function (event) {
+            event.preventDefault()
+
+            const delta = event.deltaY
+
             if (delta > 0) {
-                document.querySelector('.section2').scrollIntoView({ behavior: 'smooth' });
+            document.querySelector('.section2').scrollIntoView({ behavior: 'smooth' })
             } else if (delta < 0) {
-                document.querySelector('.section1').scrollIntoView({ behavior: 'smooth' });
+            document.querySelector('.section1').scrollIntoView({ behavior: 'smooth' })
             }
-        });
+        })
 
-        
-        window.addEventListener('wheel', function(event) {
-            event.preventDefault();
-        }, { passive: false });
+        window.addEventListener(
+            'wheel',
+            function (event) {
+            event.preventDefault()
+            },
+            { passive: true }
+        )
 
-        window.addEventListener('scroll', function() {
-    var nav = document.querySelector('nav');
-    var scrolled = window.scrollY > 0;
-    
-    if (scrolled) {
-        nav.classList.add('scrolled');
-    } else {
-        nav.classList.remove('scrolled');
-    }
-});
+        window.addEventListener('scroll', function () {
+            var nav = document.querySelector('nav')
+            var scrolled = window.scrollY > 0
 
-        
-    </script>
+            if (scrolled) {
+            nav.classList.add('scrolled')
+            } else {
+            nav.classList.remove('scrolled')
+            }
+        })
+        </script>
+
         </body>
     </html>
