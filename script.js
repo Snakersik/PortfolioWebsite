@@ -57,7 +57,6 @@ buttons.forEach(button => {
 
     slides.children[newIndex].dataset.active = true
     delete activeSlide.dataset.active
-    
     if (newIndex === 0) {
         theme.textContent = "E-commerce shop";
       } else if (newIndex === 1) {
@@ -65,6 +64,8 @@ buttons.forEach(button => {
       } else if (newIndex === 2) {
         theme.textContent = "Project 3";
       }
+
+    
 
   })
 })

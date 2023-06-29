@@ -667,8 +667,8 @@ nav.scrolled {
     
     flex-direction: column;
     height: 100%;
-    padding: 50px;
-    gap: 5rem;
+
+    gap: 3rem;
 
   }
 
@@ -689,8 +689,8 @@ nav.scrolled {
   .SkillContainer {
     font-size: 1.5vw;
     min-height: auto;
-    min-width: 50vw;
-    padding: 0.5rem;
+    width: 100%;
+    
   }
   .skillsTheme{
     font-size: 28px;
