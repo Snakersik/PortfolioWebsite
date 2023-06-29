@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/e172e4aae4.js"
             crossorigin="anonymous"></script>
+        <script src="script.js" defer></script>
+
 
     </head>
     <body>
@@ -37,7 +39,7 @@
                 </ul>
             </nav>
 
-            <div class="container">
+            <div class="bubbles-container">
                 <div class="bubbles">
                     <span style="--i:1;"></span>
                     <span style="--i:3.3;"></span>
@@ -198,76 +200,30 @@
 
             </section>
 
-            <section class="section3">
-                <h1 class="hero">/ Projects</h1>
-                <div class="projects-box">
-                    <div class="project first">
-                    </div>
 
-                    <div class="project ">
-                    </div>
-                    <div class="project">
+            <section class="section3" aria-label="Projects">
+                <div class="carousel" data-carousel>
+                    <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+                    <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+                    <ul data-slides>
+                      <li class="slide" data-active>
+                        <img src="e-commerce-first.jpg" alt="Nature Image #1">
+                      </li>
+                      <li class="slide">
+                        <img src="SnakeGame.jpg" alt="Nature Image #2">
+                      </li>
+                      <li class="slide">
+                        <img src="e-commerce-first.jpg" alt="Nature Image #3">
+                      </li>
+                    </ul>
+                  </div>
 
-                    </div>
-                    <div class="project">
-                    </div>
-
-                    <div class="project">
-                        
-                    </div>
-                    <div class="project">
-                        
-                        
-                    </div>
-
-                </div>
 
             </section>
 
-        <script config --global -l>
-        function scrollToSection1() {
-            document.querySelector('.section1').scrollIntoView({ behavior: 'smooth' })
-        }
-        function scrollToSection2() {
-            document.querySelector('.section2').scrollIntoView({ behavior: 'smooth' })
-        }
-        function scrollToSection3() {
-            document.querySelector('.section3').scrollIntoView({ behavior: 'smooth' })
-        }
-
-        window.addEventListener('view')
-
-        window.addEventListener('wheel', function (event) {
-            event.preventDefault()
-
-            const delta = event.deltaY
-
-            if (delta > 0) {
-            document.querySelector('.section2').scrollIntoView({ behavior: 'smooth' })
-            } else if (delta < 0) {
-            document.querySelector('.section1').scrollIntoView({ behavior: 'smooth' })
-            }
-        })
-
-        window.addEventListener(
-            'wheel',
-            function (event) {
-            event.preventDefault()
-            },
-            { passive: true }
-        )
-
-        window.addEventListener('scroll', function () {
-            var nav = document.querySelector('nav')
-            var scrolled = window.scrollY > 0
-
-            if (scrolled) {
-            nav.classList.add('scrolled')
-            } else {
-            nav.classList.remove('scrolled')
-            }
-        })
-        </script>
+        
+ 
+        
 
         </body>
     </html>
