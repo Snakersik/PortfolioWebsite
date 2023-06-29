@@ -545,6 +545,7 @@ nav.scrolled {
   background-color: #01080E;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 50px;
 }
 
 .carousel {
@@ -557,7 +558,7 @@ nav.scrolled {
   grid-row-gap: 0px;
   justify-content: center;
   overflow: hidden;
-  padding: 100px;
+
 
   
 }
@@ -634,16 +635,7 @@ nav.scrolled {
 }
 
 
-.readmore{
-  position: relative;
-  width: 100px;
-  height: 80px;
-  background-color: red;
-  border-radius: 20px;
 
-  
-  
-}
 
 
 
@@ -699,9 +691,7 @@ nav.scrolled {
   .skillsDescribtion{
     font-size: 22px;
   }
-  .section3{
-    padding: 50px;
-  }
+
 
 
 
