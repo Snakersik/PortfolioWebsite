@@ -40,6 +40,8 @@ window.addEventListener("scroll", function () {
 });
 
 const buttons = document.querySelectorAll("[data-carousel-button]")
+const theme = document.querySelector(".project-title");
+
 
 buttons.forEach(button => {
   button.addEventListener("click", () => {
@@ -55,5 +57,14 @@ buttons.forEach(button => {
 
     slides.children[newIndex].dataset.active = true
     delete activeSlide.dataset.active
+    
+    if (newIndex === 0) {
+        theme.textContent = "E-commerce shop";
+      } else if (newIndex === 1) {
+        theme.textContent = "Snake game";
+      } else if (newIndex === 2) {
+        theme.textContent = "Project 3";
+      }
+
   })
 })
