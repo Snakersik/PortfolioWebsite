@@ -263,7 +263,7 @@ nav.scrolled {
     animation-timing-function: ease-out;
   }
 }
-
+/* ---------------------Tech stack page---------------------- */
 .section2 {
   color: var(--text-color);
   font-family: "Belanosima", sans-serif;
@@ -534,18 +534,19 @@ nav.scrolled {
     width: 60%;
   }
 }
-
+/* ---------------------Projects page---------------------- */
 .section3 {
   color: var(--text-color);
   font-family: "Belanosima", sans-serif;
   background-color: #19376d;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+ 
 }
 
-.section3 > .flex-container1 {
+.flex-container1 {
   padding-top: 50px;
+  padding-bottom: 100px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -554,6 +555,7 @@ nav.scrolled {
   max-width: 1200px;
   flex-wrap: wrap;
   flex-direction: row;
+  
 }
 
 .card {
@@ -587,7 +589,7 @@ nav.scrolled {
   color: #f0f0f0;
   background-color: #03ffff;
   border-radius: 10px;
-  width: 100px;
+  width: 150px;
   height: 40px;
   text-transform: uppercase;
   position: absolute;
@@ -598,6 +600,7 @@ nav.scrolled {
   opacity: 0;
   transition: opacity 0.5s, transform 0.5s;
   cursor: pointer;
+  
 }
 
 .card:hover {
@@ -615,6 +618,73 @@ nav.scrolled {
   transform: translateY(-100px);
   transition: opacity 0.5s, transform 0.5s;
 }
+
+
+
+/* ---------------------About me page---------------------- */
+
+
+
+.section4 {
+  color: var(--text-color);
+  font-family: "Belanosima", sans-serif;
+  background-color: #0b2447;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+ 
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  
+}
+
+.flex-row{
+  justify-content: space-around;
+}
+
+
+.my-photo{
+  background-image: url("boy.png");
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center; 
+}
+
+.about-theme{
+  font-size: 20px;
+  padding: 10px
+  
+}
+.about-me-desc{
+ max-width: 50vh;
+}
+
+.about-desc{
+  text-align: center;
+  max-width: 200px;
+}
+
+
+
+
+
+.circle{
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+
+
+
+
 
 @media screen and (max-width: 1250px) {
   .flex-container {
