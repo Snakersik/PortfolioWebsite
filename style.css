@@ -651,14 +651,14 @@ nav.scrolled {
 
 .my-photo{
   background-image: url("boy.png");
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   background-size: cover;
   background-position: center; 
 }
 
 .about-theme{
-  font-size: 20px;
+  font-size: 28px;
   padding: 10px
   
 }
@@ -668,7 +668,8 @@ nav.scrolled {
 
 .about-desc{
   text-align: center;
-  max-width: 200px;
+  max-width: 230px;
+  font-size: 18px;
 }
 
 
@@ -676,8 +677,8 @@ nav.scrolled {
 
 
 .circle{
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-color: white;
   border-radius: 50%;
 }
