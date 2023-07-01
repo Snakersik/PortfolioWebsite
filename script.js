@@ -8,17 +8,6 @@ function scrollToSection3() {
   document.querySelector(".section3").scrollIntoView({ behavior: "smooth" });
 }
 
-window.addEventListener("wheel", function (event) {
-  event.preventDefault();
-
-  const delta = event.deltaY;
-
-  if (delta > 0) {
-    document.querySelector(".section2").scrollIntoView({ behavior: "smooth" });
-  } else if (delta < 0) {
-    document.querySelector(".section1").scrollIntoView({ behavior: "smooth" });
-  }
-});
 
 window.addEventListener(
   "wheel",

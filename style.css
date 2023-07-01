@@ -19,7 +19,9 @@
   box-sizing: border-box;
 }
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -39,9 +41,12 @@ a {
   animation: bounce-in-top 2s both;
 }
 
+.hr {
+  border: none;
+  border-top: 1px solid white;
+}
 
-
-nav{
+nav {
   color: var(--text-color-navar);
   font-family: "Belanosima", sans-serif;
   background-color: transparent;
@@ -50,7 +55,7 @@ nav{
   padding-bottom: 1.563rem;
   width: 100%;
   z-index: 100;
-  transition: background-color 0.5s; 
+  transition: background-color 0.5s;
   text-align: center;
 }
 
@@ -61,23 +66,17 @@ nav > ul > .btn-home {
   cursor: pointer;
 }
 
-
 nav.scrolled {
-  
   background-color: rgba(0, 0, 0, 0.8);
 }
-
-
-
 
 .links li {
   display: inline;
   padding: 2rem;
   font-size: 2vw;
-
 }
 
-.links li:hover{
+.links li:hover {
   color: black;
 }
 
@@ -90,7 +89,6 @@ nav.scrolled {
   background-attachment: fixed;
   background-position: center;
   height: 100vh;
-  
 }
 
 .intro {
@@ -98,7 +96,6 @@ nav.scrolled {
   text-align: center;
   top: 30%;
   overflow: hidden;
-  
 }
 
 .introText {
@@ -131,18 +128,11 @@ nav.scrolled {
   height: 100vh;
   overflow: hidden;
   pointer-events: none;
- 
-  
-  
-  
 }
-
 
 .bubbles {
   position: relative;
   display: flex;
-  
-  
 }
 
 .bubbles span {
@@ -156,8 +146,6 @@ nav.scrolled {
   animation: animate 15s linear infinite;
   animation-duration: calc(125s / var(--i));
   pointer-events: none;
- 
-  
 }
 
 @keyframes animate {
@@ -279,21 +267,37 @@ nav.scrolled {
 .section2 {
   color: var(--text-color);
   font-family: "Belanosima", sans-serif;
-  background-color: #01080E;
+  background-color: #0b2447;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.underline {
+  width: 6rem;
+  height: 0.25rem;
+  background: #49a6e9;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-container {
   height: 100vh;
-  padding: 3rem;
+  padding: 4rem;
   display: flex;
   gap: 7.5rem;
   justify-content: center;
   align-items: center;
-
 }
 
 .SkillContainer {
-
-  
   border-color: #03ffff;
   border-style: solid;
   border-width: 5px;
@@ -304,10 +308,6 @@ nav.scrolled {
   text-align: center;
   overflow: hidden;
   cursor: pointer;
-  
-  
-  
-  
 }
 
 .skillsTheme {
@@ -320,11 +320,11 @@ nav.scrolled {
 
 .skillsDescribtion {
   font-size: 1.5vw;
-  padding: 0.938rem;
+  padding: 2rem;
 }
 
 .bar {
-  background: #353b48;
+  background: black;
   display: block;
   height: 0.8rem;
   border: 1px solid rgba(0, 0, 0, 0, 3);
@@ -535,180 +535,119 @@ nav.scrolled {
   }
 }
 
-
-
-
-
 .section3 {
   color: var(--text-color);
   font-family: "Belanosima", sans-serif;
-  background-color: #01080E;
+  background-color: #19376d;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 50px;
+  height: 100vh;
 }
 
-.carousel {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 1fr 10fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  justify-content: center;
-  overflow: hidden;
-
-
-  
-}
-
-.carousel > ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.project-theme {
-  background-color: #042747;
+.section3 > .flex-container1 {
+  padding-top: 50px;
+  margin: 0 auto;
   display: flex;
-  width: 100%;
-  justify-content: space-between;
-  
-
+  justify-content: center;
   align-items: center;
+  gap: 0;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.card {
+  background-image: url("thumb-5.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 390px;
+  height: 390px;
+  transition: opacity 0.5s;
+}
+
+.project-card {
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  transition: opacity 0.5s;
 }
 
 .project-title {
-  color: white;
-  font-size: 2vw;
-}
-
-.slide {
-  display: none;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  top: 0;
   opacity: 0;
-  transition: 200ms opacity ease-in-out;
-  transition-delay: 200ms;
+  transition: opacity 0.5s, transform 0.5s;
 }
 
-.slide > img {
-  position: relative;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
-}
-
-.slide:hover > img{
-  opacity: .1;
-}
-
-.slide[data-active] {
-  opacity: 1;
-  z-index: 1;
-  display: block;
-  transition-delay: 0ms;
-}
-
-.carousel-button {
-  background: none;
-  border: none;
-  font-size: 4vw;
-  z-index: 2;
+.readmore-btn {
+  text-align: center;
+  color: #f0f0f0;
+  background-color: #03ffff;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
   cursor: pointer;
-  border-radius: 0.25rem;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.1);
-  height: 100%;
-  
-
 }
 
-.carousel-button:hover,
-.carousel-button:focus {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.2);
+.card:hover {
+  opacity: 0;
 }
 
-.carousel-button:focus {
-  outline: 1px solid black;
+.project-card:hover .project-title {
+  opacity: 1;
+  transform: translateY(100px);
+  transition: opacity 0.5s, transform 0.5s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
+.project-card:hover .readmore-btn {
+  opacity: 1;
+  transform: translateY(-100px);
+  transition: opacity 0.5s, transform 0.5s;
+}
 
 @media screen and (max-width: 1250px) {
-  .section2{
-    
+  .flex-container {
     flex-direction: column;
     height: 100%;
-
     gap: 3rem;
-
   }
-
 
   h1 {
     font-size: 6vw;
   }
-  
+
   h2 {
     font-size: 1.5rem;
   }
-  
+
   .links li {
     font-size: 3vw;
   }
-  
 
   .SkillContainer {
     font-size: 1.5vw;
     min-height: auto;
     width: 100%;
-    
   }
-  .skillsTheme{
+  .skillsTheme {
     font-size: 28px;
   }
-  
-  .skillsDescribtion{
+
+  .skillsDescribtion {
     font-size: 22px;
   }
-
-
-
-
+  .underline {
+    width: 4rem;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
