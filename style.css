@@ -604,9 +604,9 @@ nav.scrolled {
   
 }
 
-.card:hover {
-  opacity: 0;
-}
+
+
+
 
 .project-card:hover .project-title {
   opacity: 1;
@@ -618,6 +618,10 @@ nav.scrolled {
   opacity: 1;
   transform: translateY(-100px);
   transition: opacity 0.5s, transform 0.5s;
+}
+
+.project-card:hover .card {
+  opacity: 0;
 }
 
 
@@ -640,13 +644,14 @@ nav.scrolled {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 30px;
+  gap: 20px;
+  max-width: 1300px;
+
   
 }
 
-.flex-row{
-  justify-content: space-around;
-}
+
 
 
 .my-photo{
@@ -655,15 +660,17 @@ nav.scrolled {
   height: 180px;
   background-size: cover;
   background-position: center; 
+
 }
 
 .about-theme{
   font-size: 28px;
-  padding: 10px
+  padding: 20px;
+
   
 }
 .about-me-desc{
- max-width: 50vh;
+ max-width: 60vh;
 }
 
 .about-desc{
@@ -672,15 +679,40 @@ nav.scrolled {
   font-size: 18px;
 }
 
+.btn-resume{
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  height: 50px;
+}
+
 
 
 
 
 .circle{
-  width: 200px;
-  height: 200px;
-  background-color: white;
+  width: 100px;
+  height: 100px;
+  background-color: #03ffff;
   border-radius: 50%;
+
+}
+
+.circle-icon1{
+  background-image: url(device.png);
+  background-size: cover;
+}
+.circle-icon2{
+  background-image: url(teamwork.png);
+  background-size: cover;
+}
+.circle-icon3{
+  background-image: url(clean.png);
+  background-size: cover;
+}
+.circle-icon4{
+  background-image: url(dynamic.png);
+  background-size: cover;
 }
 
 
@@ -721,5 +753,9 @@ nav.scrolled {
   }
   .underline {
     width: 4rem;
+  }
+
+  .flex-column{
+    flex: 1 0 50%;
   }
 }
