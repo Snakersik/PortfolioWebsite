@@ -8,6 +8,10 @@ function scrollToSection3() {
   document.querySelector(".section3").scrollIntoView({ behavior: "smooth" });
 }
 
+function scrollToSection4() {
+  document.querySelector(".section4").scrollIntoView({ behavior: "smooth" });
+}
+
 
 window.addEventListener(
   "wheel",

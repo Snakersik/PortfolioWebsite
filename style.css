@@ -567,6 +567,14 @@ nav.scrolled {
   transition: opacity 0.5s;
 }
 
+#card-1{
+  background-image: url("traveler.png");
+}
+
+#card-2{
+  background-image: url("e-commerce-first.jpg");
+}
+
 .project-card {
   background-position: center;
   background-size: cover;
@@ -671,6 +679,7 @@ nav.scrolled {
 }
 .about-me-desc{
  max-width: 60vh;
+ font-size: 18px;
 }
 
 .about-desc{
@@ -679,12 +688,6 @@ nav.scrolled {
   font-size: 18px;
 }
 
-.btn-resume{
-  background-color: white;
-  border-radius: 20px;
-  padding: 20px;
-  height: 50px;
-}
 
 
 
