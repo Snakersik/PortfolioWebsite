@@ -1,32 +1,23 @@
-function scrollToSection1() {
-  document.querySelector(".section1").scrollIntoView({ behavior: "smooth" });
-}
-function scrollToSection2() {
-  document.querySelector(".section2").scrollIntoView({ behavior: "smooth" });
-}
-function scrollToSection3() {
-  document.querySelector(".section3").scrollIntoView({ behavior: "smooth" });
-}
-
-function scrollToSection4() {
-  document.querySelector(".section4").scrollIntoView({ behavior: "smooth" });
-}
-
-function scrollToSection5() {
-  document.querySelector(".section5").scrollIntoView({ behavior: "smooth" });
+function scrollToSection(section) {
+  console.log(section);
+  document.querySelector(`${section}`).scrollIntoView({ behavior: "smooth" });
+  dropDownMenu.classList.toggle("open");
+  checkOpen();
 }
 
 const toggle = document.querySelector(".toogle-button");
 const dropDownMenu = document.querySelector(".dropdown-menu");
+const dropDownMenuIcon = document.querySelector(".toogle-button i");
 
 toggle.onclick = function () {
   console.log("click");
   dropDownMenu.classList.toggle("open");
+  checkOpen();
 };
 
 window.addEventListener("scroll", function () {
-  var nav = document.querySelector("nav");
-  var scrolled = window.scrollY > 0;
+  const nav = document.querySelector("nav");
+  const scrolled = window.scrollY > 0;
 
   if (scrolled) {
     nav.classList.add("scrolled");
@@ -34,3 +25,10 @@ window.addEventListener("scroll", function () {
     nav.classList.remove("scrolled");
   }
 });
+
+const checkOpen = () => {
+  const isOpen = dropDownMenu.classList.contains("open");
+  dropDownMenuIcon.classList = isOpen
+    ? "fa-solid fa-x fa-xl"
+    : "fa-solid fa-bars fa-xl";
+};
