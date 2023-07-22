@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description"
-            content="Portfolio Website Konrad Tratwal My projects">
+            content="Portfolio Website, Konrad Tratwal, My projects">
 
         <title>Portfolio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,17 +27,42 @@
                     <li class="btn-home" onclick="scrollToSection1()">
                         Home
                     </li>
-                    <li class="btn" onclick="scrollToSection2()">
+                    <div class="right-navbar">
+                    <li  onclick="scrollToSection2()">
                         Tech stack
                     </li>
-                    <li class="btn" onclick="scrollToSection3()">
+                    <li  onclick="scrollToSection3()">
                         Projects
                     </li>
-                    <li class="btn" onclick="scrollToSection4()"> 
+                    <li  onclick="scrollToSection4()"> 
                         About me
                     </li>
+                    <li  onclick="scrollToSection5()"> 
+                        Contact
+                    </li>
+                    
+                </div>
+                <div class="toogle-button">
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </div>
+                
                 </ul>
             </nav>
+            <div class="dropdown-menu">
+                <li  onclick="scrollToSection2()">
+                    Tech stack
+                </li>
+                <li  onclick="scrollToSection3()">
+                    Projects
+                </li>
+                <li  onclick="scrollToSection4()"> 
+                    About me
+                </li>
+                <li  onclick="scrollToSection5()"> 
+                    Contact
+                </li>
+
+            </div>
 
             <div class="bubbles-container">
                 <div class="bubbles">
@@ -85,122 +110,50 @@
 
             <div class="intro">
                 <h1 class="introText">I'm Konrad a </h1>
-                <h1 class="chleb"></h1>
+                <h1 class="text-anim"></h1>
                 <a href="https://github.com/Snakersik"
                     class="fa-brands fa-github   fa-fw "
-                    style="color: #03FFFF; font-size: 3vw;"></a>
+                    style="color: #03FFFF; font-size: 4vw;"
+                    target="_blank"></a>
                 <a href="https://www.linkedin.com/in/konrad-tratwal-625495252/"
                     class="fa-brands fa-linkedin   fa-fw "
-                    style="color: #03FFFF; font-size: 3vw;"></a>
-                <a href="https://www.linkedin.com/in/konrad-tratwal-625495252/"
-                    class="fa-brands fa-twitter   fa-fw "
-                    style="color: #03FFFF; font-size: 3vw;"></a>
+                    style="color: #03FFFF; font-size: 4vw;"
+                    target="_blank"></a>
 
             </section>
 
             <section class="section2">
                 <h1 class="hero">Tech Stack</h1>
                 <div class="underline"></div>
-                <div class="flex-container">
+                <div class="TechStack-Container">
+                    <div class="Container">
+                        <h2 class="skillsTheme">Skills</h2>
+                        <div class="skillContainer">
+                            <div class="skill">HTML</div>
+                            <div class="skill">CSS</div>
+                            <div class="skill">JavaScript</div>
+                            <div class="skill">Rest api</div>
+                            <div class="skill">npm</div>
+                            <div class="skill">git</div>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="Container">
+                        <h2 class="skillsTheme">In progress</h2>
+                        <div class="skillContainer">
+                            <div class="skill">React</div>
+                            <div class="skill">Tailwind</div>
 
-                <div class="SkillContainer">
-                    <div class="Skillcontent">
-                        <div class="skillsTheme">Frontend <span
-                                class="fa-solid fa-code fa-lg"></span></div>
-
-                        <div class="skillsDescribtion">JavaScript <span
-                                class="fa-brands fa-js fa-xl"></span>
-                            <div class="skillbar"><span class="bar"> <span
-                                        class="JS"> </span> </span></div>
                         </div>
-
-                        <div class="skillsDescribtion">CSS <span
-                                class="fa-brands fa-css3-alt fa-xl"></span>
-                            <div class="skillbar"><span class="bar"> <span
-                                        class="css"> </span> </span></div>
-                        </div>
-                        <div class="skillsDescribtion">HTML <span
-                                class="fa-brands fa-html5 fa-xl"></span>
-                            <div class="skillbar"><span class="bar"> <span
-                                        class="html"> </span> </span></div>
-                        </div>
-                        <div class="skillsDescribtion">React <span
-                                class="fa-brands fa-react fa-xl"></span>
-                            <div class="skillbar"><span class="bar"> <span
-                                        class="react"> </span> </span></div>
-                        </div>
-                        <div class="skillsDescribtion">Bootstrap <span
-                                class="fa-brands fa-bootstrap fa-xl"></span>
-                            <div class="skillbar"><span class="bar"> <span
-                                        class="bootstrap"> </span> </span></div>
-                        </div>
-
+                        
                     </div>
 
                 </div>
-                <div class="SkillContainer">
-                    <div class="Skillcontent">
-                        <div class="skillsTheme">Backend <span
-                                class="fa-solid fa-gears fa-lg"></span></div>
+                
+                
 
-                        <div class="skillsDescribtion">Python <span
-                                class="fa-brands fa-python fa-xl"></span>
-                            <div class="skillbar"><span class="bar"> <span
-                                        class="python"> </span> </span></div>
-                        </div>
-                        <div class="skillsDescribtion">Node.js <span
-                                class="fa-brands fa-node fa-xl"></span>
-                            <div class="skillbar"><span class="bar"> <span
-                                        class="nodejs"> </span> </span></div>
-                        </div>
-                        <div class="skillsDescribtion">MongoDB <span
-                                class="fa-solid fa-database fa-xl"></span>
-                            <div class="skillbar"><span class="bar"> <span
-                                        class="mongodb"> </span> </span></div>
-                        </div>
-                        <div class="skillsDescribtion">PostgreSQL <span
-                                class="fa-solid fa-database fa-xl"></span>
-                            <div class="skillbar"><span class="bar"> <span
-                                        class="postgressql"> </span> </span></div>
-                        </div>
-                        <div class="skillsDescribtion">Rest API <span class></span>
-                            <div class="skillbar"><span class="bar"> <span
-                                        class="restapi"> </span> </span></div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="SkillContainer ">
-
-                    <div class="Skillcontent">
-                        <div class="skillsTheme">Other <span
-                                class="fa-solid fa-brain-circuit "></span></div>
-
-                        <div class="skillsDescribtion">Figma <span
-                                class="fa-brands fa-figma fa-xl"></span>
-                            <div class="skillbar"><span class="bar"> <span
-                                        class="figma"></span></span></div>
-                        </div>
-
-                        <div class="skillsDescribtion">Photoshop <span class></span>
-                            <div class="skillbar"><span class="bar"> <span
-                                        class="photoshop"></span></span></div>
-                        </div>
-                        <div class="skillsDescribtion">Git <span
-                                class="fa-brands fa-git-alt fa-xl"></span>
-                            <div class="skillbar"><span class="bar"> <span
-                                        class="git"></span></span></div>
-                        </div>
-                        <div class="skillsDescribtion">Postman <span class></span>
-                            <div class="skillbar"><span class="bar"> <span
-                                        class="postman"> </span> </span></div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
+                
 
             </section>
 
@@ -208,31 +161,26 @@
             <section class="section3" >
                 <h1 class="hero">Projects</h1>
                 <div class="underline"></div>
-                <div class="flex-container1">
+                <div class="flex-container">
                     <div class="project-card">
                         <div class="card"  id="card-1"></div>
-                        <div class="project-title">Project </div>
-                        <button class="readmore-btn" type="button">read me</button>
+                        <div class="project-title">Traveler landing page</div>
+                        <a href="https://travelersnakersik.netlify.app" class="readmore-btn"  target="_blank">Show me</a>
                     </div>
-                    
+<!--                     
                     <div class="project-card">
                         <div class="card" id="card-2"></div>
-                        <div class="project-title">Project 2</div>
-                        <button class="readmore-btn" type="button">read more</button>
-
-                    </div>
-                    <div class="project-card" >
+                        <div class="project-title">E-commerce shop</div>
+                        <button class="readmore-btn"  >Read more</button>
+                    </div> -->
+                    <!-- <div class="project-card" >
                         <div class="card" id="card-3"></div>
                         <div class="project-title">Project 3</div>
-                        <button class="readmore-btn" type="button">read more</button>
+                        <button class="readmore-btn" type="button">Read more</button>
 
 
                     </div>
-                    <div class="project-card">
-                        <div class="card" id="card-4"></div>
-                        <div class="project-title">Project 4</div>
-                        <button class="readmore-btn" type="button">read more</button>
-                    </div>
+ -->
                     
                 </div>
 
@@ -240,7 +188,7 @@
               <section class="section4">
                 <h1 class="hero">About me</h1>
                 <div class="underline"></div>
-                <div class="flex-container1 flex-column">
+                <div class="flex-container flex-column">
                         <div class="my-photo"></div>
                         <div class="about-me-desc">
                             I am currently a passionate third-year computer science student with a strong focus on web application development. 
@@ -248,7 +196,7 @@
                             and front-end development. Looking ahead, I aspire to become a versatile full-stack developer. 
                         </div>
                        
-                    <div class="flex-container1">
+                    <div class="flex-container">
 
                         <div class="flex-column">          
                             <div class="circle circle-icon1"></div>
@@ -276,6 +224,20 @@
                    
                     
                 </div>
+
+              </section>
+              <section class="section5">
+                <h1 class="hero">Contact me!</h1>
+                <div class="underline"></div>
+                <form name="contact" method="POST" data-netlify="true">
+
+                    <input type="text" placeholder="name"  name="name" id="name">
+                    <input type="email" placeholder="email"  name="email" id="email">
+                    <textarea name="message" id="" cols="20" rows="10" class="box message" placeholder="message"></textarea>
+                    <button type="submit" id="send"> send </button>
+
+                  </form>
+
 
               </section>
 
