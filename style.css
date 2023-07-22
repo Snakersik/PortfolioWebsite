@@ -71,7 +71,7 @@ li {
 }
 
 li:hover {
-  color: rgba(0, 0, 0, 0.8);
+  color: white;
 }
 
 nav > ul > .btn-home {
@@ -102,7 +102,7 @@ nav.scrolled {
 }
 
 .toogle-button:hover {
-  color: rgba(0, 0, 0, 0.8);
+  color: white;
 }
 
 .section1 {
@@ -606,7 +606,7 @@ form button:hover {
   top: 75px;
   width: 100vw;
   background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(5px);
   border-radius: 10px;
   overflow: hidden;
   height: 0px;
