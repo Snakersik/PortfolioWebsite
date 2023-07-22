@@ -603,8 +603,8 @@ form button:hover {
   position: fixed;
 
   right: 0;
-  top: 80px;
-  width: 200px;
+  top: 75px;
+  width: 100vw;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(2px);
   border-radius: 10px;
@@ -623,5 +623,5 @@ form button:hover {
 }
 
 .dropdown-menu.open {
-  height: 100vh;
+  height: 200px;
 }
