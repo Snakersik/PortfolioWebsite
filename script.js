@@ -8,6 +8,7 @@ function scrollToSection(section) {
 const toggle = document.querySelector(".toogle-button");
 const dropDownMenu = document.querySelector(".dropdown-menu");
 const dropDownMenuIcon = document.querySelector(".toogle-button i");
+const animText = document.querySelector(".text-anim");
 
 toggle.onclick = function () {
   console.log("click");
@@ -32,3 +33,38 @@ const checkOpen = () => {
     ? "fa-solid fa-x fa-xl"
     : "fa-solid fa-bars fa-xl";
 };
+const text = "web developer";
+let letter = " ";
+
+let index = 0;
+const animationDelay = 300;
+const initialDelay = 2000;
+let direction = 1;
+
+function animateLetter() {
+  if (direction === 1) {
+    letter += text[index];
+    animText.textContent = letter;
+    index++;
+
+    if (index === text.length) {
+      direction = -1;
+      setTimeout(animateLetter, animationDelay);
+    } else {
+      setTimeout(animateLetter, animationDelay);
+    }
+  } else {
+    letter = letter.slice(0, -1);
+    animText.textContent = letter;
+
+    if (letter.length === 0) {
+      direction = 1;
+      index = 0;
+      setTimeout(animateLetter, animationDelay);
+    } else {
+      setTimeout(animateLetter, animationDelay);
+    }
+  }
+}
+
+setTimeout(animateLetter, initialDelay);
