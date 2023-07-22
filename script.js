@@ -68,3 +68,10 @@ function animateLetter() {
 }
 
 setTimeout(animateLetter, initialDelay);
+
+addEventListener("resize", function () {
+  if (window.innerWidth > 800 && dropDownMenu.classList.contains("open")) {
+    dropDownMenu.classList.remove("open");
+    dropDownMenuIcon.classList = "fa-solid fa-bars fa-xl";
+  }
+});
