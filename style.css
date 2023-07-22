@@ -529,12 +529,6 @@ input {
   border-bottom: 1px solid white;
   font-family: "Belanosima", sans-serif;
 }
-#name {
-  grid-area: 1 / 1 / 2 / 2;
-}
-#email {
-  grid-area: 1 / 2 / 2 / 3;
-}
 
 textarea {
   resize: none;
